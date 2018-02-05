@@ -1,2 +1,2 @@
 # IpythonBridge
-Interface class for sending data to running Ipython kernels (especially build for use with Pentaho)
+Interface class for sending data to a running Ipython kernel (especially build for use within Pentaho Software)
