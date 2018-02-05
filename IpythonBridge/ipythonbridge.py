@@ -17,15 +17,15 @@ class Ipythonbridge:
 
 
     def sendDataFrame(self, df, df_name='pentaho_df', ):
-    #Sends a dataframe
+    #Sends a dataframe to the openend kernel
 
         json_df = df.to_json()
         self.kernel_client.execute("{} = pd.read_json('{}')".format(df_name, json_df))
 
 
+    
+
     def sendObject(self):
+        #@TODO
         pass
 
-
-    def close(self):
-        self.kernel_client.clo
