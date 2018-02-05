@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import numpy as np
 
-from PentahoIpythonBridge.ipythonbridge import Ipythonbridge
+from IpythonBridge.ipythonbridge import Ipythonbridge
 
 class TestIpythonBridge(unittest.TestCase):
 

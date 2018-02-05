@@ -2,6 +2,7 @@ import jupyter_client
 import numpy as np
 import pandas as pd
 import tempfile
+import random
 
 
 class Ipythonbridge:
@@ -17,13 +18,11 @@ class Ipythonbridge:
 
 
     def sendDataFrame(self, df, df_name='pentaho_df', ):
-    #Sends a dataframe to the openend kernel
+    #Sends a dataframe to the connected kernel
 
         json_df = df.to_json()
         self.kernel_client.execute("{} = pd.read_json('{}')".format(df_name, json_df))
 
-
-    
 
     def sendObject(self):
         #@TODO
